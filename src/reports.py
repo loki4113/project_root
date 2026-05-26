@@ -1,7 +1,7 @@
 import csv
 
 
-# Save anomalies to CSV
+
 def write_anomalies(anomalies):
 
     with open(
@@ -27,7 +27,7 @@ def write_anomalies(anomalies):
             writer.writerow(anomaly)
 
 
-# Save final inventory state
+
 def write_final_state(items):
 
     with open(

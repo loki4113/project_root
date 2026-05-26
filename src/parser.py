@@ -2,8 +2,6 @@ import csv
 
 from datetime import datetime
 
-
-# Load inventory data
 def load_inventory(path):
 
     items = {}
@@ -19,7 +17,6 @@ def load_inventory(path):
     return items
 
 
-# Load events data
 def load_events(path):
 
     events = []

@@ -1,4 +1,4 @@
-# Process events
+
 def process_event(
     event,
     items,
@@ -10,7 +10,6 @@ def process_event(
     item_id = event["item_id"]
 
 
-    # Reject unknown item
     if item_id not in items:
 
         anomalies.append({
@@ -24,7 +23,6 @@ def process_event(
     item = items[item_id]
 
 
-    # CHECKOUT
     if action == "CHECKOUT":
 
         if item["start_status"] != "available":
@@ -44,7 +42,6 @@ def process_event(
         print(f"{item_id} checked out")
 
 
-    # RETURN
     elif action == "RETURN":
 
         if item["start_status"] != "checked_out":
@@ -55,7 +52,6 @@ def process_event(
             })
 
             return
-
 
         item["start_status"] = "available"
 
