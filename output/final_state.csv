@@ -1,0 +1,16 @@
+item_id,start_status,start_holder
+cam-001,checked_out,s111
+cam-002,available,
+cam-003,maintenance,
+lap-001,checked_out,s115
+lap-002,checked_out,s104
+lap-003,checked_out,s115
+mic-001,checked_out,s104
+mic-002,checked_out,s105
+trip-001,available,
+trip-002,checked_out,s110
+tab-001,checked_out,s107
+tab-002,maintenance,
+light-001,checked_out,s108
+light-002,checked_out,s204
+bad-001,checked_out,
